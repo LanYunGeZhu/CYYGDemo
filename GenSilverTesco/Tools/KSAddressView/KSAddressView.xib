@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KSAddressView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMo-gF-v38">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.94509803920000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="1JI-iC-eP9"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="QV6-AE-sEy"/>
+                    </connections>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-6L-y4k">
+                    <rect key="frame" x="0.0" y="411" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi3-c0-oUo">
+                            <rect key="frame" x="328" y="5" width="31" height="30"/>
+                            <state key="normal" title="确定"/>
+                            <connections>
+                                <action selector="determine:" destination="iN0-l3-epB" eventType="touchUpInside" id="yZe-ue-K05"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-Wv-L43">
+                            <rect key="frame" x="16" y="5" width="31" height="30"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="base_ButtonsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="fyB-yj-kOk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.94509803920000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IHm-Wv-L43" firstAttribute="leading" secondItem="SaA-6L-y4k" secondAttribute="leading" constant="16" id="15l-JY-Qfi"/>
+                        <constraint firstItem="oi3-c0-oUo" firstAttribute="centerY" secondItem="SaA-6L-y4k" secondAttribute="centerY" id="7kw-ZF-oAp"/>
+                        <constraint firstAttribute="trailing" secondItem="oi3-c0-oUo" secondAttribute="trailing" constant="16" id="H7L-Am-DEB"/>
+                        <constraint firstAttribute="height" constant="40" id="Jyw-2J-yiN"/>
+                        <constraint firstItem="IHm-Wv-L43" firstAttribute="centerY" secondItem="SaA-6L-y4k" secondAttribute="centerY" id="qUd-4a-Wbl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RMo-gF-v38" secondAttribute="bottom" id="2f5-nt-Cre"/>
+                <constraint firstItem="RMo-gF-v38" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="326-va-2H2"/>
+                <constraint firstAttribute="trailing" secondItem="RMo-gF-v38" secondAttribute="trailing" id="4Jh-BW-TlM"/>
+                <constraint firstAttribute="trailing" secondItem="SaA-6L-y4k" secondAttribute="trailing" id="D4z-9E-rJC"/>
+                <constraint firstItem="RMo-gF-v38" firstAttribute="top" secondItem="SaA-6L-y4k" secondAttribute="bottom" id="OMQ-WT-mQJ"/>
+                <constraint firstItem="SaA-6L-y4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XQG-ku-vdQ"/>
+            </constraints>
+            <connections>
+                <outlet property="pickView" destination="RMo-gF-v38" id="zAF-qc-FQ8"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="71.5"/>
+        </view>
+    </objects>
+</document>

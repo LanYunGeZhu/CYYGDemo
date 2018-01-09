@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SupportListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTZ-XJ-amM">
+                        <rect key="frame" x="0.0" y="70" width="375" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-Ag-wdz">
+                                <rect key="frame" x="14" y="12" width="132" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="  浙江-杭州-西湖区" image="地址">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="SnI-4e-Jjk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Lxb-pA-cSv"/>
+                            <constraint firstItem="OKZ-Ag-wdz" firstAttribute="leading" secondItem="yTZ-XJ-amM" secondAttribute="leading" constant="14" id="P6k-8e-ru5"/>
+                            <constraint firstItem="OKZ-Ag-wdz" firstAttribute="centerY" secondItem="yTZ-XJ-amM" secondAttribute="centerY" id="QKI-mM-ARb"/>
+                            <constraint firstItem="SnI-4e-Jjk" firstAttribute="top" secondItem="yTZ-XJ-amM" secondAttribute="top" id="bVw-Lp-Xti"/>
+                            <constraint firstItem="SnI-4e-Jjk" firstAttribute="leading" secondItem="yTZ-XJ-amM" secondAttribute="leading" id="hMI-X7-KLK"/>
+                            <constraint firstAttribute="trailing" secondItem="SnI-4e-Jjk" secondAttribute="trailing" id="ysu-hH-6QG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代理商号 : 娜娜商行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhY-85-JSQ">
+                        <rect key="frame" x="14" y="14" width="126" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.06.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khV-Qd-0R3">
+                        <rect key="frame" x="306" y="16" width="58" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系姓名 : 张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED9-1a-1dV">
+                        <rect key="frame" x="14" y="39" width="98" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yTZ-XJ-amM" secondAttribute="bottom" id="4ai-5b-8Eu"/>
+                    <constraint firstItem="ED9-1a-1dV" firstAttribute="top" secondItem="mhY-85-JSQ" secondAttribute="bottom" constant="8" id="BYp-gG-f61"/>
+                    <constraint firstItem="khV-Qd-0R3" firstAttribute="centerY" secondItem="mhY-85-JSQ" secondAttribute="centerY" id="CjB-0o-WZF"/>
+                    <constraint firstAttribute="trailing" secondItem="yTZ-XJ-amM" secondAttribute="trailing" id="KzX-QH-wNS"/>
+                    <constraint firstItem="mhY-85-JSQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Thw-cb-ICx"/>
+                    <constraint firstItem="ED9-1a-1dV" firstAttribute="leading" secondItem="mhY-85-JSQ" secondAttribute="leading" id="dJC-iK-Itq"/>
+                    <constraint firstItem="mhY-85-JSQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="dtz-lU-nxV"/>
+                    <constraint firstAttribute="trailing" secondItem="khV-Qd-0R3" secondAttribute="trailing" constant="11" id="eEI-h9-tBc"/>
+                    <constraint firstItem="yTZ-XJ-amM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kYa-HD-nUj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="agentName" destination="mhY-85-JSQ" id="hiL-vr-1MP"/>
+                <outlet property="area" destination="OKZ-Ag-wdz" id="KzP-CP-DK7"/>
+                <outlet property="name" destination="ED9-1a-1dV" id="eQ7-Hz-jMT"/>
+                <outlet property="timer" destination="khV-Qd-0R3" id="wGs-WU-vhz"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="85.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line" width="1" height="1"/>
+        <image name="地址" width="11" height="14"/>
+    </resources>
+</document>

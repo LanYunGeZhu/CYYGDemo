@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShopForListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29h-0N-y77">
+                        <rect key="frame" x="15" y="13" width="57.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57.5" id="pGa-OM-ZRu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="电话" translatesAutoresizingMaskIntoConstraints="NO" id="1yK-PY-KR9">
+                        <rect key="frame" x="285" y="11.5" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxx" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p59-eP-5aX">
+                        <rect key="frame" x="81" y="13" width="196" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="29h-0N-y77" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="KpF-Qe-6jb"/>
+                    <constraint firstItem="29h-0N-y77" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Yni-ap-x0W"/>
+                    <constraint firstAttribute="trailing" secondItem="1yK-PY-KR9" secondAttribute="trailing" constant="15" id="Zpw-87-muR"/>
+                    <constraint firstItem="p59-eP-5aX" firstAttribute="leading" secondItem="29h-0N-y77" secondAttribute="trailing" constant="8.5" id="ZuD-aQ-Smi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="p59-eP-5aX" secondAttribute="trailing" constant="35" id="fTx-as-iZH"/>
+                    <constraint firstItem="1yK-PY-KR9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="qpP-wI-gzM"/>
+                    <constraint firstItem="p59-eP-5aX" firstAttribute="top" secondItem="29h-0N-y77" secondAttribute="top" id="xfp-cr-JwW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contextLabel" destination="p59-eP-5aX" id="KZQ-AO-5Wa"/>
+                <outlet property="icoImageView" destination="1yK-PY-KR9" id="MYf-kQ-13x"/>
+                <outlet property="layou_context_trailing" destination="fTx-as-iZH" id="YsP-zr-mbT"/>
+                <outlet property="nameLabel" destination="29h-0N-y77" id="w5n-DX-FUU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="电话" width="20" height="20"/>
+    </resources>
+</document>

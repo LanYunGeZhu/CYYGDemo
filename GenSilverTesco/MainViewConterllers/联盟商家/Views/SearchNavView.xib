@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchNavView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addressb" translatesAutoresizingMaskIntoConstraints="NO" id="PXI-iW-b3s">
+                    <rect key="frame" x="0.0" y="16" width="14" height="18"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37a-bV-DWu">
+                    <rect key="frame" x="22" y="17" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-Pj-2sA">
+                    <rect key="frame" x="72" y="0.0" width="303" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-OT-j10">
+                            <rect key="frame" x="10" y="0.0" width="285" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="p2O-Om-R9b"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-8t-wUG">
+                            <rect key="frame" x="125.5" y="16.5" width="51" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="  搜索" image="Search Icon">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="mencClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="bHv-bD-aHh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xp7-OT-j10" secondAttribute="bottom" id="MLz-Pg-cW9"/>
+                        <constraint firstItem="xp7-OT-j10" firstAttribute="top" secondItem="6g9-Pj-2sA" secondAttribute="top" id="QYK-QN-YyX"/>
+                        <constraint firstAttribute="trailing" secondItem="xp7-OT-j10" secondAttribute="trailing" constant="8" id="d1O-BL-974"/>
+                        <constraint firstItem="eC7-8t-wUG" firstAttribute="centerY" secondItem="6g9-Pj-2sA" secondAttribute="centerY" id="hac-hK-IfE"/>
+                        <constraint firstItem="xp7-OT-j10" firstAttribute="leading" secondItem="6g9-Pj-2sA" secondAttribute="leading" constant="10" id="vNB-vN-Yjp"/>
+                        <constraint firstItem="eC7-8t-wUG" firstAttribute="centerX" secondItem="6g9-Pj-2sA" secondAttribute="centerX" id="zG5-St-8DH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMj-ET-OGZ">
+                    <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
+                    <connections>
+                        <action selector="base_ButtonsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="YxJ-mB-byj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PXI-iW-b3s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4Z8-Ad-RQ0"/>
+                <constraint firstItem="6g9-Pj-2sA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="72" id="5lL-RB-kID"/>
+                <constraint firstItem="6g9-Pj-2sA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CSZ-Se-jRK"/>
+                <constraint firstAttribute="trailing" secondItem="6g9-Pj-2sA" secondAttribute="trailing" id="Fjj-EZ-PYo"/>
+                <constraint firstItem="37a-bV-DWu" firstAttribute="leading" secondItem="PXI-iW-b3s" secondAttribute="trailing" constant="8" id="KTl-bY-qav"/>
+                <constraint firstItem="6g9-Pj-2sA" firstAttribute="leading" secondItem="37a-bV-DWu" secondAttribute="trailing" priority="250" constant="5" id="LzL-10-5sa"/>
+                <constraint firstItem="zMj-ET-OGZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tmw-ko-iWm"/>
+                <constraint firstItem="zMj-ET-OGZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VGc-d7-IiT"/>
+                <constraint firstItem="6g9-Pj-2sA" firstAttribute="leading" secondItem="zMj-ET-OGZ" secondAttribute="trailing" id="VaB-bp-2IB"/>
+                <constraint firstItem="PXI-iW-b3s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZIr-uU-erj"/>
+                <constraint firstAttribute="bottom" secondItem="zMj-ET-OGZ" secondAttribute="bottom" id="f0L-fp-WLJ"/>
+                <constraint firstItem="37a-bV-DWu" firstAttribute="centerY" secondItem="PXI-iW-b3s" secondAttribute="centerY" id="sOk-bh-MUI"/>
+                <constraint firstAttribute="bottom" secondItem="6g9-Pj-2sA" secondAttribute="bottom" id="wh8-yh-z1I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="6g9-Pj-2sA" id="jCZ-Fe-HpS"/>
+                <outlet property="iocAddress" destination="PXI-iW-b3s" id="MO4-b1-lLB"/>
+                <outlet property="searchButton" destination="eC7-8t-wUG" id="cAP-z7-CLZ"/>
+                <outlet property="serachTextField" destination="xp7-OT-j10" id="GjU-ax-NxW"/>
+                <outlet property="textAddress" destination="37a-bV-DWu" id="8gX-vZ-Fl3"/>
+                <outlet property="text_layou" destination="LzL-10-5sa" id="C2e-rd-gsd"/>
+                <outlet property="view_layou" destination="5lL-RB-kID" id="82m-W1-YIS"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="-252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Search Icon" width="14" height="14"/>
+        <image name="addressb" width="14" height="18"/>
+    </resources>
+</document>

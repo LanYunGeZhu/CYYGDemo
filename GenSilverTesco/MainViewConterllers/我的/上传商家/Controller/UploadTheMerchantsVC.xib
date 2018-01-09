@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadTheMerchantsVC">
+            <connections>
+                <outlet property="myTableView" destination="bdB-S9-fuX" id="yWt-Zc-phv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bdB-S9-fuX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Udi-DB-lte"/>
+                        <outlet property="delegate" destination="-1" id="65e-1e-000"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-Oz-ONu">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3hP-Hf-XSG"/>
+                    </constraints>
+                    <state key="normal" title="提交审核">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitAudit:" destination="-1" eventType="touchUpInside" id="y04-WI-LgZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uhu-Oz-ONu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5m3-af-Yan"/>
+                <constraint firstAttribute="bottom" secondItem="Uhu-Oz-ONu" secondAttribute="bottom" id="VCh-yv-52F"/>
+                <constraint firstAttribute="bottom" secondItem="bdB-S9-fuX" secondAttribute="bottom" constant="44" id="dIv-9r-p9b"/>
+                <constraint firstAttribute="trailing" secondItem="bdB-S9-fuX" secondAttribute="trailing" id="khw-2G-7Nh"/>
+                <constraint firstItem="bdB-S9-fuX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p4B-9w-LHp"/>
+                <constraint firstAttribute="trailing" secondItem="Uhu-Oz-ONu" secondAttribute="trailing" id="rHW-0u-cku"/>
+                <constraint firstItem="bdB-S9-fuX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sve-F1-rCz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

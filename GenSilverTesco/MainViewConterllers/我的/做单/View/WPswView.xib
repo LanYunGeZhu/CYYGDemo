@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WPswView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgo-ha-CPE">
+                    <rect key="frame" x="63" y="234" width="250" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0l-ln-Yfj">
+                            <rect key="frame" x="25" y="101" width="200" height="1"/>
+                            <color key="backgroundColor" red="0.56933525709999999" green="0.57497223980000001" blue="0.57497223980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EQo-6r-HuZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-6w-JwH">
+                            <rect key="frame" x="75" y="123" width="100" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.16129594446733087" blue="0.1580045876470294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="6Fx-cu-mTC"/>
+                                <constraint firstAttribute="width" constant="100" id="WLS-LD-ced"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="支付"/>
+                            <connections>
+                                <action selector="base_ButtonsClick:" destination="-2" eventType="touchUpInside" id="qFL-da-RSi"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="支付密码" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-Zw-l7h">
+                            <rect key="frame" x="25" y="61" width="200" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Kr3-U4-Ms4"/>
+                            </constraints>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入支付密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRV-og-Oji">
+                            <rect key="frame" x="25" y="25" width="200" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="psQ-Me-FYq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eg1-Zw-l7h" secondAttribute="bottom" constant="109" id="1OO-Ef-W5o"/>
+                        <constraint firstItem="eg1-Zw-l7h" firstAttribute="centerX" secondItem="MRV-og-Oji" secondAttribute="centerX" id="36r-oV-Epm"/>
+                        <constraint firstItem="eg1-Zw-l7h" firstAttribute="width" secondItem="MRV-og-Oji" secondAttribute="width" id="6Ra-6i-wAo"/>
+                        <constraint firstItem="t0l-ln-Yfj" firstAttribute="top" secondItem="eg1-Zw-l7h" secondAttribute="bottom" constant="10" id="G9S-ES-MJV"/>
+                        <constraint firstItem="MRV-og-Oji" firstAttribute="leading" secondItem="Rgo-ha-CPE" secondAttribute="leading" constant="25" id="GzN-At-IsU"/>
+                        <constraint firstItem="jEc-6w-JwH" firstAttribute="top" secondItem="t0l-ln-Yfj" secondAttribute="bottom" constant="21" id="HWX-Vz-4NI"/>
+                        <constraint firstAttribute="width" constant="250" id="VpW-5F-1g7"/>
+                        <constraint firstItem="eg1-Zw-l7h" firstAttribute="top" secondItem="MRV-og-Oji" secondAttribute="bottom" constant="16" id="XsB-Gt-Ste"/>
+                        <constraint firstAttribute="height" constant="200" id="Ykf-z2-DzH"/>
+                        <constraint firstAttribute="trailing" secondItem="MRV-og-Oji" secondAttribute="trailing" constant="25" id="Zub-QH-naf"/>
+                        <constraint firstItem="jEc-6w-JwH" firstAttribute="centerX" secondItem="t0l-ln-Yfj" secondAttribute="centerX" id="cHo-GL-oeq"/>
+                        <constraint firstAttribute="trailing" secondItem="t0l-ln-Yfj" secondAttribute="trailing" constant="25" id="lrD-7O-wL6"/>
+                        <constraint firstItem="MRV-og-Oji" firstAttribute="top" secondItem="Rgo-ha-CPE" secondAttribute="top" constant="25" id="wMy-Hz-CjX"/>
+                        <constraint firstItem="t0l-ln-Yfj" firstAttribute="leading" secondItem="Rgo-ha-CPE" secondAttribute="leading" constant="25" id="yqV-UF-lkp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Rgo-ha-CPE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jg1-wY-vfh"/>
+                <constraint firstItem="Rgo-ha-CPE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lWu-pF-Su0"/>
+            </constraints>
+            <connections>
+                <outlet property="Btn" destination="jEc-6w-JwH" id="Ybk-7v-105"/>
+                <outlet property="WPswView" destination="Rgo-ha-CPE" id="uqq-vt-tl1"/>
+                <outlet property="WPswtext" destination="eg1-Zw-l7h" id="1g8-BL-Pa8"/>
+            </connections>
+            <point key="canvasLocation" x="14.5" y="158.5"/>
+        </view>
+    </objects>
+</document>

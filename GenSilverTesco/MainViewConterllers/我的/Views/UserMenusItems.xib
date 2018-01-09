@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserMenusItems">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="81" height="83"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人账户" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-y0-Goa">
+                        <rect key="frame" x="28.5" y="27" width="24" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的购物车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKp-jF-0aA">
+                        <rect key="frame" x="12" y="67" width="56.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bfy-y0-Goa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="27" id="4NA-uo-QKI"/>
+                <constraint firstItem="lKp-jF-0aA" firstAttribute="top" secondItem="bfy-y0-Goa" secondAttribute="bottom" constant="16" id="Mhd-3p-vSj"/>
+                <constraint firstItem="lKp-jF-0aA" firstAttribute="centerX" secondItem="bfy-y0-Goa" secondAttribute="centerX" id="eYl-L6-v7V"/>
+                <constraint firstItem="bfy-y0-Goa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wHR-X7-vom"/>
+            </constraints>
+            <size key="customSize" width="81" height="83"/>
+            <connections>
+                <outlet property="itemsImageView" destination="bfy-y0-Goa" id="h1R-iy-uL5"/>
+                <outlet property="titleLabel" destination="lKp-jF-0aA" id="hoy-Xb-OlM"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="97.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="个人账户" width="24" height="24"/>
+    </resources>
+</document>

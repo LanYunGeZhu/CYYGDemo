@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OnlineHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Oe-d4-gn8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="16"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="pMw-Z7-mu3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KxB-MV-ejt">
+                    <rect key="frame" x="0.0" y="16" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgx-Zl-jSs">
+                            <rect key="frame" x="325" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="gHD-Xr-kJV"/>
+                            </constraints>
+                            <state key="normal" image="更多11"/>
+                            <connections>
+                                <action selector="base_ButtonsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="AX7-zX-p2i"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待收货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7K-ic-jQU">
+                            <rect key="frame" x="282" y="14" width="43" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tgx-Zl-jSs" firstAttribute="top" secondItem="KxB-MV-ejt" secondAttribute="top" id="6Si-rO-ITd"/>
+                        <constraint firstItem="tgx-Zl-jSs" firstAttribute="leading" secondItem="d7K-ic-jQU" secondAttribute="trailing" id="6pU-hF-dew"/>
+                        <constraint firstAttribute="bottom" secondItem="tgx-Zl-jSs" secondAttribute="bottom" id="86X-w7-Hkg"/>
+                        <constraint firstAttribute="trailing" secondItem="tgx-Zl-jSs" secondAttribute="trailing" id="Uku-9c-cTx"/>
+                        <constraint firstItem="d7K-ic-jQU" firstAttribute="centerY" secondItem="tgx-Zl-jSs" secondAttribute="centerY" id="e0X-5s-SS1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Oe-d4-gn8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BzH-gP-5P5"/>
+                <constraint firstItem="KxB-MV-ejt" firstAttribute="top" secondItem="2Oe-d4-gn8" secondAttribute="bottom" id="DJ0-ZP-1aw"/>
+                <constraint firstItem="KxB-MV-ejt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UV4-IW-4n9"/>
+                <constraint firstAttribute="trailing" secondItem="2Oe-d4-gn8" secondAttribute="trailing" id="UWb-aa-jVG"/>
+                <constraint firstAttribute="bottom" secondItem="KxB-MV-ejt" secondAttribute="bottom" id="jW4-7g-Iqk"/>
+                <constraint firstAttribute="trailing" secondItem="KxB-MV-ejt" secondAttribute="trailing" id="nUm-id-OcK"/>
+                <constraint firstItem="2Oe-d4-gn8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zZW-oc-Zia"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="orderStatus" destination="d7K-ic-jQU" id="7xE-FF-72c"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="更多11" width="20" height="4"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StoreManagementCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wND-1I-7Ke">
+                        <rect key="frame" x="0.0" y="59" width="375" height="31"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ss4-y6-AnR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JV-54-Gui">
+                                <rect key="frame" x="16" y="8" width="157" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="  浙江-杭州市-西湖区-文三路" image="地址">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ss4-y6-AnR" firstAttribute="top" secondItem="wND-1I-7Ke" secondAttribute="top" id="5IE-3U-nDD"/>
+                            <constraint firstItem="4JV-54-Gui" firstAttribute="leading" secondItem="wND-1I-7Ke" secondAttribute="leading" constant="16" id="LYA-7d-ho5"/>
+                            <constraint firstItem="4JV-54-Gui" firstAttribute="centerY" secondItem="wND-1I-7Ke" secondAttribute="centerY" id="PlA-EO-XgA"/>
+                            <constraint firstAttribute="trailing" secondItem="ss4-y6-AnR" secondAttribute="trailing" id="Ucy-jW-PO3"/>
+                            <constraint firstItem="ss4-y6-AnR" firstAttribute="leading" secondItem="wND-1I-7Ke" secondAttribute="leading" id="kVY-Gd-nvt"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-jJ-wry">
+                        <rect key="frame" x="16" y="7" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gdh-jJ-wry" secondAttribute="height" multiplier="1:1" id="Jxh-vl-hb0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WXSC车行旗舰店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-fD-erW">
+                        <rect key="frame" x="77" y="7" width="121" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三  18458290***" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-Sk-n6C">
+                        <rect key="frame" x="77" y="34" width="132" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfF-ks-dR7">
+                        <rect key="frame" x="325" y="9" width="34" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjV-rs-y55">
+                        <rect key="frame" x="271" y="14" width="88" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Slr-oN-oHC"/>
+                            <constraint firstAttribute="width" constant="88" id="ydj-rI-LSK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="制作收款码">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wND-1I-7Ke" secondAttribute="trailing" id="14b-dG-bhx"/>
+                    <constraint firstItem="wND-1I-7Ke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Mf-VJ-Pyv"/>
+                    <constraint firstItem="wND-1I-7Ke" firstAttribute="top" secondItem="gdh-jJ-wry" secondAttribute="bottom" constant="7" id="88M-CW-DhP"/>
+                    <constraint firstItem="eIM-Sk-n6C" firstAttribute="bottom" secondItem="gdh-jJ-wry" secondAttribute="bottom" id="Emq-be-v77"/>
+                    <constraint firstItem="wND-1I-7Ke" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="59" id="GGc-CP-eJv"/>
+                    <constraint firstItem="gdh-jJ-wry" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="L1T-fv-QWt"/>
+                    <constraint firstItem="mjV-rs-y55" firstAttribute="centerY" secondItem="gdh-jJ-wry" secondAttribute="centerY" id="PbP-ge-3YL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mjV-rs-y55" secondAttribute="trailing" constant="8" id="RnF-aA-Dp3"/>
+                    <constraint firstItem="gdh-jJ-wry" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Vtp-WB-TRn"/>
+                    <constraint firstItem="cbS-fD-erW" firstAttribute="top" secondItem="gdh-jJ-wry" secondAttribute="top" id="Wbc-p0-OnA"/>
+                    <constraint firstItem="hfF-ks-dR7" firstAttribute="centerY" secondItem="cbS-fD-erW" secondAttribute="centerY" id="Yqj-nF-a1b"/>
+                    <constraint firstAttribute="bottom" secondItem="wND-1I-7Ke" secondAttribute="bottom" id="gSe-1N-EKF"/>
+                    <constraint firstItem="eIM-Sk-n6C" firstAttribute="leading" secondItem="cbS-fD-erW" secondAttribute="leading" id="nzS-ul-nfq"/>
+                    <constraint firstItem="cbS-fD-erW" firstAttribute="leading" secondItem="gdh-jJ-wry" secondAttribute="trailing" constant="16" id="pjm-fK-J4M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hfF-ks-dR7" secondAttribute="trailing" constant="8" id="vf4-SJ-zEg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="4JV-54-Gui" id="YYl-e0-yXX"/>
+                <outlet property="icoImageView" destination="gdh-jJ-wry" id="XMT-ro-Tec"/>
+                <outlet property="makePaymentCode" destination="mjV-rs-y55" id="1Cb-1X-GcH"/>
+                <outlet property="name_phone" destination="eIM-Sk-n6C" id="3ca-fG-DWm"/>
+                <outlet property="state" destination="hfF-ks-dR7" id="U7t-DN-hFd"/>
+                <outlet property="storeName" destination="cbS-fD-erW" id="GmX-ZO-dF2"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line" width="1" height="1"/>
+        <image name="placeholderImage" width="320" height="283"/>
+        <image name="地址" width="11" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShoppingCartCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phM-rS-hw9">
+                        <rect key="frame" x="0.0" y="0.0" width="47" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="ohu-RL-ugx"/>
+                        </constraints>
+                        <state key="normal" image="Oval1"/>
+                        <state key="selected" image="选中"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="Gu1-EV-UPm">
+                        <rect key="frame" x="47" y="16" width="67" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="UzH-Ih-L5y"/>
+                            <constraint firstAttribute="width" constant="67" id="qMt-ah-kKS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Proietti Design蝴蝶款女士..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-0B-vPr">
+                        <rect key="frame" x="122" y="16" width="245" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38码·彩色·一双" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4s-Cn-Rab">
+                        <rect key="frame" x="122" y="37" width="245" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥ 588" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-xQ-aGi">
+                        <rect key="frame" x="122" y="66" width="45" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoopB" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-SP-OSN">
+                        <rect key="frame" x="234" y="63" width="90" height="25"/>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBG-YD-uKg">
+                        <rect key="frame" x="262" y="63" width="34" height="25"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-84-eoZ">
+                        <rect key="frame" x="296" y="63" width="28" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="NRz-5n-bHx"/>
+                        </constraints>
+                        <state key="normal" image="shoopJ"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbf-yZ-cwH">
+                        <rect key="frame" x="234" y="63" width="28" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="QBr-MO-z0Z"/>
+                        </constraints>
+                        <state key="normal" image="shoopjian"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dLs-SP-OSN" firstAttribute="bottom" secondItem="Gu1-EV-UPm" secondAttribute="bottom" constant="5" id="0Md-XN-UdI"/>
+                    <constraint firstItem="KBG-YD-uKg" firstAttribute="top" secondItem="dLs-SP-OSN" secondAttribute="top" id="1k1-7D-mGq"/>
+                    <constraint firstItem="iSl-84-eoZ" firstAttribute="bottom" secondItem="dLs-SP-OSN" secondAttribute="bottom" id="2K2-AP-RGA"/>
+                    <constraint firstItem="Gu1-EV-UPm" firstAttribute="leading" secondItem="phM-rS-hw9" secondAttribute="trailing" id="BXf-J1-uh4"/>
+                    <constraint firstItem="hEb-xQ-aGi" firstAttribute="bottom" secondItem="Gu1-EV-UPm" secondAttribute="bottom" id="Esj-Xg-vfr"/>
+                    <constraint firstItem="Ee7-0B-vPr" firstAttribute="top" secondItem="Gu1-EV-UPm" secondAttribute="top" id="Fjr-Jt-amV"/>
+                    <constraint firstItem="iSl-84-eoZ" firstAttribute="top" secondItem="dLs-SP-OSN" secondAttribute="top" id="KWc-ie-Qrc"/>
+                    <constraint firstItem="Y4s-Cn-Rab" firstAttribute="leading" secondItem="Ee7-0B-vPr" secondAttribute="leading" id="QPS-DH-ZGr"/>
+                    <constraint firstItem="phM-rS-hw9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TjX-qC-RIS"/>
+                    <constraint firstItem="phM-rS-hw9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="U73-tR-AsQ"/>
+                    <constraint firstItem="Ee7-0B-vPr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="UXS-MV-siG"/>
+                    <constraint firstItem="Cbf-yZ-cwH" firstAttribute="leading" secondItem="dLs-SP-OSN" secondAttribute="leading" id="Yhs-Qo-dSM"/>
+                    <constraint firstItem="Y4s-Cn-Rab" firstAttribute="top" secondItem="Ee7-0B-vPr" secondAttribute="bottom" constant="4" id="eEy-PX-x9s"/>
+                    <constraint firstItem="Cbf-yZ-cwH" firstAttribute="top" secondItem="dLs-SP-OSN" secondAttribute="top" id="eVK-xE-cX1"/>
+                    <constraint firstItem="Y4s-Cn-Rab" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fBG-Xq-gSf"/>
+                    <constraint firstItem="iSl-84-eoZ" firstAttribute="leading" secondItem="KBG-YD-uKg" secondAttribute="trailing" id="gK4-YS-dBc"/>
+                    <constraint firstItem="iSl-84-eoZ" firstAttribute="trailing" secondItem="dLs-SP-OSN" secondAttribute="trailing" id="m7A-YX-5Zf"/>
+                    <constraint firstItem="dLs-SP-OSN" firstAttribute="bottom" secondItem="KBG-YD-uKg" secondAttribute="bottom" id="mz6-K9-1tx"/>
+                    <constraint firstItem="KBG-YD-uKg" firstAttribute="leading" secondItem="Cbf-yZ-cwH" secondAttribute="trailing" id="qxZ-rd-4eP"/>
+                    <constraint firstItem="hEb-xQ-aGi" firstAttribute="leading" secondItem="Gu1-EV-UPm" secondAttribute="trailing" constant="8" id="rgM-rQ-zx6"/>
+                    <constraint firstAttribute="bottom" secondItem="phM-rS-hw9" secondAttribute="bottom" id="ttD-bY-F1h"/>
+                    <constraint firstItem="Ee7-0B-vPr" firstAttribute="leading" secondItem="Gu1-EV-UPm" secondAttribute="trailing" constant="8" id="x2z-gJ-YYt"/>
+                    <constraint firstItem="dLs-SP-OSN" firstAttribute="leading" secondItem="Gu1-EV-UPm" secondAttribute="trailing" constant="120" id="ydF-iU-UZI"/>
+                    <constraint firstItem="Cbf-yZ-cwH" firstAttribute="bottom" secondItem="dLs-SP-OSN" secondAttribute="bottom" id="zEN-wS-Xb5"/>
+                    <constraint firstItem="Gu1-EV-UPm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zyx-qz-EAx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addNum" destination="iSl-84-eoZ" id="YKZ-RB-Jx6"/>
+                <outlet property="attribute" destination="Y4s-Cn-Rab" id="b6Z-o0-cpb"/>
+                <outlet property="deleteNum" destination="Cbf-yZ-cwH" id="HYw-fS-sKF"/>
+                <outlet property="icoImageView" destination="Gu1-EV-UPm" id="9ft-jk-RVO"/>
+                <outlet property="layou_icoIamge_leading" destination="BXf-J1-uh4" id="dxx-XO-PyB"/>
+                <outlet property="name" destination="Ee7-0B-vPr" id="tJe-Mj-fXs"/>
+                <outlet property="price" destination="hEb-xQ-aGi" id="cKu-n3-pjd"/>
+                <outlet property="selectButton" destination="phM-rS-hw9" id="NNj-Vr-vIX"/>
+                <outlet property="textField" destination="KBG-YD-uKg" id="ZaV-Is-lc9"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Oval1" width="22" height="22"/>
+        <image name="placeholderImage" width="320" height="283"/>
+        <image name="shoopB" width="90" height="25"/>
+        <image name="shoopJ" width="14" height="14"/>
+        <image name="shoopjian" width="15" height="1"/>
+        <image name="选中" width="20" height="20"/>
+    </resources>
+</document>

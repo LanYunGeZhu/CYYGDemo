@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenWinMenusCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-wt-1K8">
+                        <rect key="frame" x="187" y="10" width="1" height="50"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poA-rH-IZS">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="70"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="126" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="商品分类" image="下拉-1">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" image="下拉">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mensClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UUq-JN-C7l"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmc-uD-ukh">
+                        <rect key="frame" x="188" y="0.0" width="187" height="70"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="126" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="综合排序" image="下拉-1">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="selected" image="下拉">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="mensClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="LT7-8l-1tV"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="poA-rH-IZS" secondAttribute="bottom" id="1Ae-xJ-0Fb"/>
+                <constraint firstAttribute="bottom" secondItem="yCa-wt-1K8" secondAttribute="bottom" constant="10" id="1MX-zw-uKo"/>
+                <constraint firstItem="Fmc-uD-ukh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Ly-1G-vL5"/>
+                <constraint firstItem="Fmc-uD-ukh" firstAttribute="leading" secondItem="poA-rH-IZS" secondAttribute="trailing" id="778-eD-gUn"/>
+                <constraint firstItem="yCa-wt-1K8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="LsS-ku-foP"/>
+                <constraint firstAttribute="bottom" secondItem="Fmc-uD-ukh" secondAttribute="bottom" id="QFw-dP-SFV"/>
+                <constraint firstItem="yCa-wt-1K8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="acx-4P-JHN"/>
+                <constraint firstItem="poA-rH-IZS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hrV-LX-IM5"/>
+                <constraint firstItem="poA-rH-IZS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rjl-GM-RWF"/>
+                <constraint firstAttribute="trailing" secondItem="Fmc-uD-ukh" secondAttribute="trailing" id="wxS-uG-4Jj"/>
+                <constraint firstItem="Fmc-uD-ukh" firstAttribute="width" secondItem="poA-rH-IZS" secondAttribute="width" id="yxI-OR-VJ3"/>
+            </constraints>
+            <size key="customSize" width="375" height="70"/>
+            <connections>
+                <outletCollection property="menusButton" destination="poA-rH-IZS" id="Yv9-yf-nqk"/>
+                <outletCollection property="menusButton" destination="Fmc-uD-ukh" id="OlY-1R-0cj"/>
+            </connections>
+            <point key="canvasLocation" x="187.5" y="62"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Oval" width="1" height="25"/>
+        <image name="下拉" width="10" height="13"/>
+        <image name="下拉-1" width="10" height="13"/>
+    </resources>
+</document>

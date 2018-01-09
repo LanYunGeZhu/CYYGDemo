@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFMyCollectVC">
+            <connections>
+                <outlet property="allchooseBtn" destination="xhH-eC-8ZM" id="WIe-cb-gKi"/>
+                <outlet property="bottomView" destination="cca-2i-t0F" id="iIs-tb-88q"/>
+                <outlet property="deleteBtn" destination="2sw-hE-zGd" id="cre-SJ-f1Z"/>
+                <outlet property="myTableView" destination="PYC-16-JhV" id="zq0-dL-Ymx"/>
+                <outlet property="view" destination="Oyb-bb-EAH" id="fU2-qm-ZIz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Oyb-bb-EAH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="PYC-16-JhV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cca-2i-t0F">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-eC-8ZM">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="187" id="6T2-aj-D6o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="全选">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="allchooseBtn:" destination="-1" eventType="touchUpInside" id="nbH-8g-T2e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sw-hE-zGd">
+                            <rect key="frame" x="188" y="0.0" width="187" height="44"/>
+                            <color key="backgroundColor" red="0.18039215689999999" green="0.67450980390000004" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="deleteBtn:" destination="-1" eventType="touchUpInside" id="kfx-76-xFq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xhH-eC-8ZM" firstAttribute="leading" secondItem="cca-2i-t0F" secondAttribute="leading" id="5qO-aM-Txd"/>
+                        <constraint firstAttribute="height" constant="44" id="98s-B4-WMa"/>
+                        <constraint firstAttribute="bottom" secondItem="xhH-eC-8ZM" secondAttribute="bottom" id="BfF-4K-eNX"/>
+                        <constraint firstAttribute="trailing" secondItem="2sw-hE-zGd" secondAttribute="trailing" id="HHe-T8-ssx"/>
+                        <constraint firstItem="xhH-eC-8ZM" firstAttribute="top" secondItem="cca-2i-t0F" secondAttribute="top" id="K7Z-Ww-zOB"/>
+                        <constraint firstItem="2sw-hE-zGd" firstAttribute="width" secondItem="xhH-eC-8ZM" secondAttribute="width" id="dbi-PR-FCR"/>
+                        <constraint firstAttribute="bottom" secondItem="2sw-hE-zGd" secondAttribute="bottom" id="s2I-SG-EfJ"/>
+                        <constraint firstItem="2sw-hE-zGd" firstAttribute="top" secondItem="cca-2i-t0F" secondAttribute="top" id="wrH-m1-0LJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PYC-16-JhV" firstAttribute="top" secondItem="Oyb-bb-EAH" secondAttribute="top" id="16q-y2-8dv"/>
+                <constraint firstItem="PYC-16-JhV" firstAttribute="leading" secondItem="Oyb-bb-EAH" secondAttribute="leading" id="1FA-vU-b3C"/>
+                <constraint firstAttribute="trailing" secondItem="cca-2i-t0F" secondAttribute="trailing" id="Brt-3O-haK"/>
+                <constraint firstAttribute="bottom" secondItem="PYC-16-JhV" secondAttribute="bottom" id="dIK-71-Jed"/>
+                <constraint firstAttribute="trailing" secondItem="PYC-16-JhV" secondAttribute="trailing" id="iP9-Rb-qXG"/>
+                <constraint firstAttribute="bottom" secondItem="cca-2i-t0F" secondAttribute="bottom" id="og1-Fg-Lez"/>
+                <constraint firstItem="cca-2i-t0F" firstAttribute="leading" secondItem="Oyb-bb-EAH" secondAttribute="leading" id="qOv-A0-cqh"/>
+            </constraints>
+            <point key="canvasLocation" x="31" y="-43"/>
+        </view>
+    </objects>
+</document>

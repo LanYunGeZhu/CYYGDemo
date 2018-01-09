@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SweepTheYardView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7v-qS-Tuu">
+                    <rect key="frame" x="47" y="174" width="280" height="320"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tz9-Rg-nFu">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎关注创盈易购官方微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6x-Gv-mMk">
+                                    <rect key="frame" x="48" y="9" width="184" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="W6x-Gv-mMk" firstAttribute="centerY" secondItem="tz9-Rg-nFu" secondAttribute="centerY" id="2T2-X3-KyH"/>
+                                <constraint firstItem="W6x-Gv-mMk" firstAttribute="centerX" secondItem="tz9-Rg-nFu" secondAttribute="centerX" id="PHv-lO-Z2P"/>
+                                <constraint firstAttribute="height" constant="36" id="wRE-Zz-axn"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiJ-O9-Tkb">
+                            <rect key="frame" x="98" y="266" width="84" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="84" id="9g7-gg-sxg"/>
+                                <constraint firstAttribute="height" constant="38" id="WSZ-ya-oC3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="我已关注">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="base_ButtonsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="HBf-hZ-YRR"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="微信公众号二维码" translatesAutoresizingMaskIntoConstraints="NO" id="GzL-rS-kwL">
+                            <rect key="frame" x="51" y="71" width="178" height="178"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="GzL-rS-kwL" secondAttribute="height" multiplier="1:1" id="kEm-Fj-3pv"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GzL-rS-kwL" firstAttribute="centerX" secondItem="B7v-qS-Tuu" secondAttribute="centerX" id="BbW-HY-JnR"/>
+                        <constraint firstItem="FiJ-O9-Tkb" firstAttribute="centerX" secondItem="B7v-qS-Tuu" secondAttribute="centerX" id="OR2-XX-22I"/>
+                        <constraint firstItem="GzL-rS-kwL" firstAttribute="width" secondItem="B7v-qS-Tuu" secondAttribute="width" multiplier="178/280" id="ORF-Co-KsM"/>
+                        <constraint firstAttribute="trailing" secondItem="tz9-Rg-nFu" secondAttribute="trailing" id="T16-UR-flX"/>
+                        <constraint firstAttribute="width" secondItem="B7v-qS-Tuu" secondAttribute="height" multiplier="7:8" id="fGS-dP-fTo"/>
+                        <constraint firstItem="tz9-Rg-nFu" firstAttribute="top" secondItem="B7v-qS-Tuu" secondAttribute="top" id="fKS-2A-76X"/>
+                        <constraint firstAttribute="bottom" secondItem="FiJ-O9-Tkb" secondAttribute="bottom" constant="16" id="iHq-qB-2C9"/>
+                        <constraint firstItem="GzL-rS-kwL" firstAttribute="centerY" secondItem="B7v-qS-Tuu" secondAttribute="centerY" id="jJz-YH-7DU"/>
+                        <constraint firstItem="tz9-Rg-nFu" firstAttribute="leading" secondItem="B7v-qS-Tuu" secondAttribute="leading" id="v2k-7q-aps"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="B7v-qS-Tuu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="280/375" id="EBm-rb-ZbC"/>
+                <constraint firstItem="B7v-qS-Tuu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VkD-4l-Ed3"/>
+                <constraint firstItem="B7v-qS-Tuu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lIt-Fn-vHU"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="B7v-qS-Tuu" id="Lzg-sN-b7r"/>
+                <outlet property="codeImageView" destination="GzL-rS-kwL" id="9D5-sk-lpZ"/>
+                <outlet property="menuButton" destination="FiJ-O9-Tkb" id="Pb6-hl-HeB"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="86.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="微信公众号二维码" width="1280" height="1280"/>
+    </resources>
+</document>

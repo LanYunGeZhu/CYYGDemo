@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OnlineFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共2件商品  合计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlc-It-fPl">
+                    <rect key="frame" x="14" y="15" width="92" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUF-gw-KDj">
+                    <rect key="frame" x="106" y="14" width="32" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcm-Lg-mbW">
+                    <rect key="frame" x="303" y="10" width="60" height="25"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="5NG-3P-cla"/>
+                        <constraint firstAttribute="height" constant="25" id="kcK-lb-gpT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="确认收货">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="base_ButtonsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="EUd-MC-wPa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dlc-It-fPl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="Cz5-Zf-qSh"/>
+                <constraint firstItem="zUF-gw-KDj" firstAttribute="centerY" secondItem="Dlc-It-fPl" secondAttribute="centerY" id="Qy7-Qp-cE5"/>
+                <constraint firstAttribute="trailing" secondItem="qcm-Lg-mbW" secondAttribute="trailing" constant="12" id="RAC-2w-9Kw"/>
+                <constraint firstItem="zUF-gw-KDj" firstAttribute="leading" secondItem="Dlc-It-fPl" secondAttribute="trailing" id="WjY-j3-irA"/>
+                <constraint firstItem="qcm-Lg-mbW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hgq-dy-vXL"/>
+                <constraint firstItem="Dlc-It-fPl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zj1-e9-Csu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="base_button" destination="qcm-Lg-mbW" id="Buy-js-A1D"/>
+                <outlet property="numLable" destination="Dlc-It-fPl" id="AEJ-fz-h0T"/>
+                <outlet property="price" destination="zUF-gw-KDj" id="J83-KJ-iFa"/>
+            </connections>
+        </view>
+    </objects>
+</document>

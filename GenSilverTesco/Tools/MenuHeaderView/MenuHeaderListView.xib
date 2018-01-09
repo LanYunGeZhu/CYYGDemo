@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuHeaderListView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="S3z-CZ-Kjb">
+                    <rect key="frame" x="0.0" y="108" width="182" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="182" id="3Q9-Lu-kjn"/>
+                        <constraint firstAttribute="height" constant="1" id="Avg-eI-8Ze"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="5m8-Kj-Ze6"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="yfY-CE-kjA"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-D9-2ji">
+                    <rect key="frame" x="182" y="108" width="193" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="xST-VM-vxP"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="asB-lQ-lPb"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhM-3T-eIz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vNy-D9-2ji" firstAttribute="top" secondItem="S3z-CZ-Kjb" secondAttribute="top" id="2jN-kv-1z7"/>
+                <constraint firstItem="vNy-D9-2ji" firstAttribute="leading" secondItem="S3z-CZ-Kjb" secondAttribute="trailing" id="4Nq-h5-yyi"/>
+                <constraint firstItem="S3z-CZ-Kjb" firstAttribute="top" secondItem="jhM-3T-eIz" secondAttribute="bottom" constant="64" id="6SX-O4-dbF"/>
+                <constraint firstAttribute="trailing" secondItem="vNy-D9-2ji" secondAttribute="trailing" id="AkA-wf-VYx"/>
+                <constraint firstItem="vNy-D9-2ji" firstAttribute="height" secondItem="S3z-CZ-Kjb" secondAttribute="height" id="TU9-KA-d47"/>
+                <constraint firstItem="jhM-3T-eIz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="44/667" id="V1P-Sl-Pes"/>
+                <constraint firstItem="S3z-CZ-Kjb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WGZ-KI-X5L"/>
+                <constraint firstAttribute="trailing" secondItem="jhM-3T-eIz" secondAttribute="trailing" id="eUn-60-Msb"/>
+                <constraint firstItem="jhM-3T-eIz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jhg-AK-erx"/>
+                <constraint firstItem="jhM-3T-eIz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lpH-JO-yXc"/>
+            </constraints>
+            <connections>
+                <outlet property="leftTableView" destination="S3z-CZ-Kjb" id="a0H-fb-Fv0"/>
+                <outlet property="left_tab_height" destination="Avg-eI-8Ze" id="by5-dl-Wkr"/>
+                <outlet property="left_tab_width" destination="3Q9-Lu-kjn" id="w6u-3X-haD"/>
+                <outlet property="rightTableView" destination="vNy-D9-2ji" id="wiO-1b-Pnn"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="91.5"/>
+        </view>
+    </objects>
+</document>

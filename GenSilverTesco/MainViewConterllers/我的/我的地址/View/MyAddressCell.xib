@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马可波罗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI0-WA-eKf">
+                        <rect key="frame" x="14" y="8" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18458190614" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iON-tO-L3b">
+                        <rect key="frame" x="271" y="8" width="90" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江省西湖区文三路 553 号中小企业大厦2002室" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvi-Gb-D00">
+                        <rect key="frame" x="14" y="29" width="347" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iON-tO-L3b" secondAttribute="trailing" constant="14" id="9AF-7D-ZzA"/>
+                    <constraint firstItem="wvi-Gb-D00" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="CJ0-iS-HU8"/>
+                    <constraint firstItem="wvi-Gb-D00" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="I9y-rE-RFF"/>
+                    <constraint firstItem="bI0-WA-eKf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="O4u-3H-o34"/>
+                    <constraint firstAttribute="trailing" secondItem="wvi-Gb-D00" secondAttribute="trailing" constant="14" id="cs9-AO-AIX"/>
+                    <constraint firstItem="iON-tO-L3b" firstAttribute="centerY" secondItem="bI0-WA-eKf" secondAttribute="centerY" id="j3I-uO-fuT"/>
+                    <constraint firstItem="bI0-WA-eKf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vgA-Mc-LeE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="wvi-Gb-D00" id="LLQ-Gc-d6r"/>
+                <outlet property="name" destination="bI0-WA-eKf" id="EnZ-pW-WH4"/>
+                <outlet property="phone" destination="iON-tO-L3b" id="gdB-Ew-GtV"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>

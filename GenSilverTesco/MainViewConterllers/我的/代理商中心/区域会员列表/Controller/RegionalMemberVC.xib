@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegionalMemberVC">
+            <connections>
+                <outlet property="alwaysPartQuantity" destination="gK6-hc-3Wa" id="uUA-0h-elW"/>
+                <outlet property="myTableView" destination="QRg-ZJ-V8i" id="oIB-vn-W6C"/>
+                <outlet property="theNewNumber" destination="bxi-XF-fj7" id="Gzk-pD-Dub"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvL-BJ-ONd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总会员量 0 人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK6-hc-3Wa">
+                            <rect key="frame" x="289" y="9" width="70" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月新增 0 人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxi-XF-fj7">
+                            <rect key="frame" x="16" y="9" width="70" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.078431372550000003" blue="0.1176470588" alpha="0.035549496639999997" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="4HJ-6Q-mZy"/>
+                        <constraint firstItem="bxi-XF-fj7" firstAttribute="leading" secondItem="hvL-BJ-ONd" secondAttribute="leading" constant="16" id="9AD-KO-kFh"/>
+                        <constraint firstAttribute="trailing" secondItem="gK6-hc-3Wa" secondAttribute="trailing" constant="16" id="Rdv-Lb-fCv"/>
+                        <constraint firstItem="gK6-hc-3Wa" firstAttribute="centerY" secondItem="hvL-BJ-ONd" secondAttribute="centerY" id="XIy-CP-uZX"/>
+                        <constraint firstItem="bxi-XF-fj7" firstAttribute="centerY" secondItem="hvL-BJ-ONd" secondAttribute="centerY" id="e4l-f1-6Z0"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QRg-ZJ-V8i">
+                    <rect key="frame" x="0.0" y="31" width="375" height="636"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="G1m-qt-RG9"/>
+                        <outlet property="delegate" destination="-1" id="nt3-Sg-UHA"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hvL-BJ-ONd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6dW-gK-SMO"/>
+                <constraint firstAttribute="trailing" secondItem="QRg-ZJ-V8i" secondAttribute="trailing" id="Ycg-n6-fFg"/>
+                <constraint firstItem="hvL-BJ-ONd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d41-7a-H3L"/>
+                <constraint firstAttribute="bottom" secondItem="QRg-ZJ-V8i" secondAttribute="bottom" id="eVU-yG-Re7"/>
+                <constraint firstItem="QRg-ZJ-V8i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eqS-4M-TqR"/>
+                <constraint firstAttribute="trailing" secondItem="hvL-BJ-ONd" secondAttribute="trailing" id="fCl-oJ-agp"/>
+                <constraint firstItem="QRg-ZJ-V8i" firstAttribute="top" secondItem="hvL-BJ-ONd" secondAttribute="bottom" id="uWM-Gs-WXc"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

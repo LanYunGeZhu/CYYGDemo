@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HeaderPageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b9-kR-vDs" customClass="PageView">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="172"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6b9-kR-vDs" secondAttribute="bottom" id="1Pu-BS-cHj"/>
+                <constraint firstItem="6b9-kR-vDs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5CR-Ec-pUy"/>
+                <constraint firstAttribute="trailing" secondItem="6b9-kR-vDs" secondAttribute="trailing" id="Yna-8X-cbg"/>
+                <constraint firstItem="6b9-kR-vDs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f3O-dJ-cuS"/>
+            </constraints>
+            <size key="customSize" width="175" height="172"/>
+            <connections>
+                <outlet property="pageView" destination="6b9-kR-vDs" id="QW9-XN-quy"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="113"/>
+        </collectionViewCell>
+    </objects>
+</document>

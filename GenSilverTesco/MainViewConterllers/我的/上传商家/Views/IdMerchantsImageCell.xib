@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="273" id="KGk-i7-Jjw" customClass="IdMerchantsImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门头照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHW-0x-JL3">
+                        <rect key="frame" x="23" y="0.0" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDT-2M-F2B">
+                        <rect key="frame" x="14" y="0.0" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2I-5O-TjQ">
+                        <rect key="frame" x="16" y="29" width="168" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="k2I-5O-TjQ" secondAttribute="height" multiplier="42:25" id="MRs-20-7fT"/>
+                        </constraints>
+                        <state key="normal" image="门头图片"/>
+                        <connections>
+                            <action selector="baseCell_buttonClikc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S3I-Ht-ftI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-fq-Wpq">
+                        <rect key="frame" x="191" y="29" width="168" height="100"/>
+                        <state key="normal" image="营业执照"/>
+                        <connections>
+                            <action selector="baseCell_buttonClikc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qge-Nw-meo"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营业执照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji1-I7-vA6">
+                        <rect key="frame" x="200" y="0.0" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uc-Rv-h6q">
+                        <rect key="frame" x="191" y="0.0" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法人身份证正面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzU-Br-VKO">
+                        <rect key="frame" x="25" y="137" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-d7-lxx">
+                        <rect key="frame" x="16" y="137" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-k1-iKf">
+                        <rect key="frame" x="16" y="166" width="168" height="100"/>
+                        <state key="normal" image="身份证正面照"/>
+                        <connections>
+                            <action selector="baseCell_buttonClikc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XbV-LN-doe"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-FD-F9J">
+                        <rect key="frame" x="160" y="156" width="36" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="LAR-rO-lMh"/>
+                            <constraint firstAttribute="height" constant="28" id="OlD-C7-nhw"/>
+                        </constraints>
+                        <state key="normal" image="删除"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法人身份证反面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grB-Cu-Dde">
+                        <rect key="frame" x="200" y="137" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-cS-Z8F">
+                        <rect key="frame" x="191" y="137" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU5-B1-OcX">
+                        <rect key="frame" x="191" y="166" width="168" height="100"/>
+                        <state key="normal" image="身份证反面"/>
+                        <connections>
+                            <action selector="baseCell_buttonClikc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0Ag-Y2-Vae"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOA-oS-eZi">
+                        <rect key="frame" x="160" y="18" width="36" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="1EH-Eu-Thg"/>
+                            <constraint firstAttribute="height" constant="28" id="2WP-Gq-UnR"/>
+                        </constraints>
+                        <state key="normal" image="删除"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-BH-1be">
+                        <rect key="frame" x="335" y="18" width="36" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="JS6-f3-NFM"/>
+                            <constraint firstAttribute="width" constant="36" id="tiq-U8-EbQ"/>
+                        </constraints>
+                        <state key="normal" image="删除"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-nr-TDd">
+                        <rect key="frame" x="331" y="156" width="36" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="0YA-lO-A3e"/>
+                            <constraint firstAttribute="height" constant="28" id="H0M-Ir-nQc"/>
+                        </constraints>
+                        <state key="normal" image="删除"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="nQb-FD-F9J" firstAttribute="trailing" secondItem="c1A-k1-iKf" secondAttribute="trailing" constant="12" id="08a-XL-Kgl"/>
+                    <constraint firstItem="cU5-B1-OcX" firstAttribute="height" secondItem="c1A-k1-iKf" secondAttribute="height" id="0IN-ZA-Esl"/>
+                    <constraint firstItem="UHW-0x-JL3" firstAttribute="leading" secondItem="zDT-2M-F2B" secondAttribute="trailing" id="0cd-AC-DTx"/>
+                    <constraint firstItem="c1A-k1-iKf" firstAttribute="top" secondItem="8Wp-d7-lxx" secondAttribute="bottom" constant="8" id="1Rg-gF-v1J"/>
+                    <constraint firstItem="WOA-oS-eZi" firstAttribute="top" secondItem="k2I-5O-TjQ" secondAttribute="top" constant="-11" id="2lv-n0-aLb"/>
+                    <constraint firstItem="Mdc-fq-Wpq" firstAttribute="width" secondItem="k2I-5O-TjQ" secondAttribute="width" id="37f-4o-EwI"/>
+                    <constraint firstItem="6Uc-Rv-h6q" firstAttribute="leading" secondItem="Mdc-fq-Wpq" secondAttribute="leading" id="4pu-e9-uPS"/>
+                    <constraint firstItem="8Wp-d7-lxx" firstAttribute="top" secondItem="IzU-Br-VKO" secondAttribute="top" id="6SP-dd-bY2"/>
+                    <constraint firstItem="zDT-2M-F2B" firstAttribute="top" secondItem="UHW-0x-JL3" secondAttribute="top" id="6eg-Ad-djH"/>
+                    <constraint firstItem="c1A-k1-iKf" firstAttribute="height" secondItem="k2I-5O-TjQ" secondAttribute="height" id="7Mo-2r-BiS"/>
+                    <constraint firstItem="UHW-0x-JL3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DVB-9z-NuH"/>
+                    <constraint firstItem="k2I-5O-TjQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ecs-zh-N6X"/>
+                    <constraint firstItem="IzU-Br-VKO" firstAttribute="leading" secondItem="8Wp-d7-lxx" secondAttribute="trailing" id="Ejr-NS-xGs"/>
+                    <constraint firstItem="cU5-B1-OcX" firstAttribute="width" secondItem="c1A-k1-iKf" secondAttribute="width" id="Ew0-PJ-07r"/>
+                    <constraint firstItem="GEa-nr-TDd" firstAttribute="trailing" secondItem="cU5-B1-OcX" secondAttribute="trailing" constant="8" id="KE9-eb-d0X"/>
+                    <constraint firstAttribute="trailing" secondItem="Mdc-fq-Wpq" secondAttribute="trailing" constant="16" id="KON-ea-vv0"/>
+                    <constraint firstItem="Mdc-fq-Wpq" firstAttribute="top" secondItem="k2I-5O-TjQ" secondAttribute="top" id="Lub-cP-cyc"/>
+                    <constraint firstItem="8Wp-d7-lxx" firstAttribute="leading" secondItem="k2I-5O-TjQ" secondAttribute="leading" id="Q8T-56-4jl"/>
+                    <constraint firstItem="c1A-k1-iKf" firstAttribute="width" secondItem="k2I-5O-TjQ" secondAttribute="width" id="QGN-hy-dkQ"/>
+                    <constraint firstItem="6Uc-Rv-h6q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QvR-co-H7C"/>
+                    <constraint firstItem="zDT-2M-F2B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="SuH-gn-mSp"/>
+                    <constraint firstItem="iWd-cS-Z8F" firstAttribute="leading" secondItem="Mdc-fq-Wpq" secondAttribute="leading" id="Wnt-UZ-ILw"/>
+                    <constraint firstItem="AIh-BH-1be" firstAttribute="trailing" secondItem="Mdc-fq-Wpq" secondAttribute="trailing" constant="12" id="Xyf-Pz-QBa"/>
+                    <constraint firstItem="iWd-cS-Z8F" firstAttribute="top" secondItem="Mdc-fq-Wpq" secondAttribute="bottom" constant="8" id="by9-vH-fxo"/>
+                    <constraint firstItem="AIh-BH-1be" firstAttribute="top" secondItem="WOA-oS-eZi" secondAttribute="top" id="crZ-gE-IqV"/>
+                    <constraint firstItem="c1A-k1-iKf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eAj-jB-Vwq"/>
+                    <constraint firstItem="k2I-5O-TjQ" firstAttribute="top" secondItem="zDT-2M-F2B" secondAttribute="bottom" constant="8" id="hfj-M1-Ac1"/>
+                    <constraint firstItem="ji1-I7-vA6" firstAttribute="leading" secondItem="6Uc-Rv-h6q" secondAttribute="trailing" id="jZk-HY-Ipy"/>
+                    <constraint firstItem="k2I-5O-TjQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="168/375" id="mHe-v2-QUj"/>
+                    <constraint firstItem="cU5-B1-OcX" firstAttribute="top" secondItem="iWd-cS-Z8F" secondAttribute="bottom" constant="8" id="oqz-pX-eQA"/>
+                    <constraint firstItem="WOA-oS-eZi" firstAttribute="trailing" secondItem="k2I-5O-TjQ" secondAttribute="trailing" constant="12" id="pgY-Dt-hab"/>
+                    <constraint firstItem="grB-Cu-Dde" firstAttribute="top" secondItem="Mdc-fq-Wpq" secondAttribute="bottom" constant="8" id="pjI-Ya-m1x"/>
+                    <constraint firstItem="GEa-nr-TDd" firstAttribute="top" secondItem="cU5-B1-OcX" secondAttribute="top" constant="-10" id="sPp-BV-aAv"/>
+                    <constraint firstItem="grB-Cu-Dde" firstAttribute="leading" secondItem="iWd-cS-Z8F" secondAttribute="trailing" id="spJ-aS-aG9"/>
+                    <constraint firstItem="8Wp-d7-lxx" firstAttribute="top" secondItem="k2I-5O-TjQ" secondAttribute="bottom" constant="8" id="wPo-VN-Rmh"/>
+                    <constraint firstItem="cU5-B1-OcX" firstAttribute="trailing" secondItem="Mdc-fq-Wpq" secondAttribute="trailing" id="whi-FN-V2o"/>
+                    <constraint firstItem="nQb-FD-F9J" firstAttribute="top" secondItem="c1A-k1-iKf" secondAttribute="top" constant="-10" id="yyb-22-UCg"/>
+                    <constraint firstItem="Mdc-fq-Wpq" firstAttribute="height" secondItem="k2I-5O-TjQ" secondAttribute="height" id="zQg-PW-eWq"/>
+                    <constraint firstItem="ji1-I7-vA6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zcQ-RP-Udi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outletCollection property="menusButton" destination="k2I-5O-TjQ" id="KDa-Un-NSM"/>
+                <outletCollection property="menusButton" destination="Mdc-fq-Wpq" id="viK-QD-LfB"/>
+                <outletCollection property="menusButton" destination="c1A-k1-iKf" id="yBK-f6-FpA"/>
+                <outletCollection property="menusButton" destination="cU5-B1-OcX" id="4RB-n9-a0Y"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="40.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="删除" width="12" height="12"/>
+        <image name="营业执照" width="169" height="100"/>
+        <image name="身份证反面" width="169" height="100"/>
+        <image name="身份证正面照" width="169" height="101"/>
+        <image name="门头图片" width="169" height="100"/>
+    </resources>
+</document>

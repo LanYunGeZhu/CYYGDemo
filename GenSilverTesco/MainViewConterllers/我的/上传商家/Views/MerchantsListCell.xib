@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MerchantsListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-1d-akh">
+                        <rect key="frame" x="14" y="13" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入会员账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zH9-i1-L0h">
+                        <rect key="frame" x="92" y="0.0" width="212" height="43"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-ce-Vgx">
+                        <rect key="frame" x="5" y="12" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="VPV-NX-kyk">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VPV-NX-kyk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="79m-Gw-K6m"/>
+                    <constraint firstItem="zH9-i1-L0h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="92" id="BRb-5b-Vkg"/>
+                    <constraint firstAttribute="bottom" secondItem="zH9-i1-L0h" secondAttribute="bottom" id="DAd-Yg-R1C"/>
+                    <constraint firstItem="zH9-i1-L0h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DhM-5C-Zoi"/>
+                    <constraint firstItem="w6P-ce-Vgx" firstAttribute="top" secondItem="R80-1d-akh" secondAttribute="top" constant="-1" id="GcP-po-UJe"/>
+                    <constraint firstItem="R80-1d-akh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Iel-jW-k2C"/>
+                    <constraint firstItem="w6P-ce-Vgx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Kb9-L3-pd5"/>
+                    <constraint firstAttribute="bottom" secondItem="VPV-NX-kyk" secondAttribute="bottom" id="Mit-0o-f5I"/>
+                    <constraint firstAttribute="trailing" secondItem="zH9-i1-L0h" secondAttribute="trailing" constant="16" id="YmJ-E3-rcp"/>
+                    <constraint firstAttribute="trailing" secondItem="VPV-NX-kyk" secondAttribute="trailing" id="iai-Gv-Xxb"/>
+                    <constraint firstItem="R80-1d-akh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pWs-d7-Vhk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contextField" destination="zH9-i1-L0h" id="ygp-JY-fa2"/>
+                <outlet property="nameLabel" destination="R80-1d-akh" id="D1V-8r-M3z"/>
+                <outlet property="statr" destination="w6P-ce-Vgx" id="scp-lq-3nm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line" width="1" height="1"/>
+    </resources>
+</document>

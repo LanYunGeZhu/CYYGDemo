@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webview" destination="Ngw-ao-qVT" id="9rK-Cv-qbF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-Bx-3ZG">
+                    <rect key="frame" x="16" y="16" width="343" height="535"/>
+                    <string key="text">       浙江天尔软件技术有限公司坐落在杭州高新技术开发区，注册资本金1000万，是一家集软件定制开发、软件外包、信息化系统建设的专业的软件技术服务提供商。 
+天尔软件拥有一支高素质，经验丰富的IT专家团队，业务涉及软件定制开发、移动互联网应用开发、行业门户网站开发、电子商务平台建设、信息化系统建设及电子政务系统建设等。作为一家以软件服务为核心的公司，我们通过开放式创新、卓越运营管理，规范的软件服务管理流程，迅速的需求响应时间及规模化的软件外包交付能力全面构造公司的核心竞争力，并打造一直专业的软件开发服务团队。公司利用数年来的项目实施及开发经验，集成行业信息，整合出一系列行业信息化软件及平台项目。公司现拥有自主研发的产品：客户关系管理系统、OA自动化管理系统、企业安全监控系统、教育平台系统及数字医疗、智慧旅游、数据存储等系列平台项目及企业电商化服务平台（旗下品牌：电商行业OA、电商ERP、B2C、C2C、O2O系列电商平台产品）以及互联网金融理财平台。天尔科技用日趋完善的软件外包服务为诸多行业的信息化建设做出了突出的贡献，先后为300多家企事业客户圆满解决了信息化建设方面的多种问题，得到了广大客户的认可。 
+从2012年起，我们公司陆续推出的数字应用、互联网金融、移动商城、大数据等解决方案更是为各行业的移动营销和管理翻开了崭新的一页。我们坚信，技术改变生活，如果您愿意给予我们一次机会，我们将用我们的全部积累和资源来缔造您的梦想。 天尔的宗旨是："专业专注，用心服务"。欢迎广大客户朋友与天尔联系，天尔软件真诚期待与您的合作！ 
+我们将为您提供全面的福利体系：五险一金，周末双休，年终双薪，绩效资金，交通补助，话补，出差补贴，高温补贴，节日福利等多种福利形式</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-ao-qVT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ngw-ao-qVT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CPR-JO-fLl"/>
+                <constraint firstAttribute="bottom" secondItem="Ngw-ao-qVT" secondAttribute="bottom" id="HRY-3x-nLX"/>
+                <constraint firstAttribute="trailing" secondItem="Ngw-ao-qVT" secondAttribute="trailing" id="UOW-bx-Hac"/>
+                <constraint firstAttribute="trailing" secondItem="mAw-Bx-3ZG" secondAttribute="trailing" constant="16" id="V6a-ab-2Yv"/>
+                <constraint firstItem="mAw-Bx-3ZG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="jO7-nr-jGF"/>
+                <constraint firstItem="Ngw-ao-qVT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mSI-K4-69r"/>
+                <constraint firstItem="mAw-Bx-3ZG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="vxd-RZ-vx6"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

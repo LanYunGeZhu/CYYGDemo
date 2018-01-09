@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="NewLatestInformationCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.18活动大促" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnW-Ti-C4P">
+                        <rect key="frame" x="16" y="16" width="341" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你期待的年中活动大促,各商家火爆促销;6月18创盈在这里等你抢购!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJU-9g-Ai8">
+                        <rect key="frame" x="16" y="38" width="341" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/06/01  12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imO-5r-Hms">
+                        <rect key="frame" x="264" y="64.5" width="95" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fJU-9g-Ai8" firstAttribute="leading" secondItem="ZnW-Ti-C4P" secondAttribute="leading" id="GC8-N6-WxM"/>
+                    <constraint firstAttribute="bottom" secondItem="fJU-9g-Ai8" secondAttribute="bottom" constant="31.5" id="Gt4-9C-Lb0"/>
+                    <constraint firstItem="fJU-9g-Ai8" firstAttribute="top" secondItem="ZnW-Ti-C4P" secondAttribute="bottom" constant="4" id="J8t-JN-Lie"/>
+                    <constraint firstItem="ZnW-Ti-C4P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="VEJ-7i-fRh"/>
+                    <constraint firstAttribute="trailing" secondItem="imO-5r-Hms" secondAttribute="trailing" constant="16" id="Xeh-S6-A0x"/>
+                    <constraint firstAttribute="trailing" secondItem="ZnW-Ti-C4P" secondAttribute="trailing" constant="18" id="cDs-Mt-jcM"/>
+                    <constraint firstItem="fJU-9g-Ai8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="izP-lJ-4uJ"/>
+                    <constraint firstItem="ZnW-Ti-C4P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="oxE-d3-P78"/>
+                    <constraint firstItem="fJU-9g-Ai8" firstAttribute="trailing" secondItem="ZnW-Ti-C4P" secondAttribute="trailing" id="pqE-Vx-DIc"/>
+                    <constraint firstAttribute="bottom" secondItem="imO-5r-Hms" secondAttribute="bottom" constant="8" id="tg2-mT-O30"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="context" destination="fJU-9g-Ai8" id="4eu-HB-hYH"/>
+                <outlet property="name" destination="ZnW-Ti-C4P" id="XXU-el-Y9a"/>
+                <outlet property="timer" destination="imO-5r-Hms" id="D5L-mN-jYx"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="107.5"/>
+        </tableViewCell>
+    </objects>
+</document>

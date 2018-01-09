@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GoodsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_goods" translatesAutoresizingMaskIntoConstraints="NO" id="lCd-eo-OS0">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="195"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="WjH-6q-7kH">
+                        <rect key="frame" x="2" y="2" width="176" height="141.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WjH-6q-7kH" secondAttribute="height" multiplier="168:135" id="6yi-u2-erF"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-Dw-4ot">
+                        <rect key="frame" x="0.0" y="143.5" width="180" height="48.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQJ-e4-kFf">
+                                <rect key="frame" x="22" y="23.5" width="136" height="1"/>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZYi-an-apK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="墨西哥Taquería Canalla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-5G-zMm">
+                                <rect key="frame" x="8" y="0.0" width="164" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-50-kNy">
+                                <rect key="frame" x="20" y="24.5" width="152" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title=" 墨西哥-古道街区-199号" image="dingwei">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HEd-5G-zMm" firstAttribute="leading" secondItem="8Ag-Dw-4ot" secondAttribute="leading" constant="8" id="2rp-1S-OMB"/>
+                            <constraint firstItem="DQJ-e4-kFf" firstAttribute="top" secondItem="HEd-5G-zMm" secondAttribute="bottom" id="4Y5-qn-MaD"/>
+                            <constraint firstAttribute="trailing" secondItem="VRz-50-kNy" secondAttribute="trailing" constant="8" id="6az-Wk-Jfa"/>
+                            <constraint firstItem="HEd-5G-zMm" firstAttribute="top" secondItem="8Ag-Dw-4ot" secondAttribute="top" id="DH7-t8-G5m"/>
+                            <constraint firstItem="DQJ-e4-kFf" firstAttribute="leading" secondItem="8Ag-Dw-4ot" secondAttribute="leading" constant="22" id="G3h-3J-jxH"/>
+                            <constraint firstAttribute="trailing" secondItem="DQJ-e4-kFf" secondAttribute="trailing" constant="22" id="JDt-UJ-H5J"/>
+                            <constraint firstItem="VRz-50-kNy" firstAttribute="leading" secondItem="8Ag-Dw-4ot" secondAttribute="leading" constant="20" id="My6-EY-kcC"/>
+                            <constraint firstAttribute="bottom" secondItem="VRz-50-kNy" secondAttribute="bottom" id="XhS-pS-QVK"/>
+                            <constraint firstItem="DQJ-e4-kFf" firstAttribute="centerY" secondItem="8Ag-Dw-4ot" secondAttribute="centerY" id="hAt-6S-J28"/>
+                            <constraint firstAttribute="trailing" secondItem="HEd-5G-zMm" secondAttribute="trailing" constant="8" id="lsy-2n-BBL"/>
+                            <constraint firstItem="VRz-50-kNy" firstAttribute="top" secondItem="DQJ-e4-kFf" secondAttribute="bottom" id="yMj-DY-LBo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Ag-Dw-4ot" secondAttribute="bottom" id="00B-M5-1a6"/>
+                <constraint firstItem="8Ag-Dw-4ot" firstAttribute="top" secondItem="WjH-6q-7kH" secondAttribute="bottom" id="98X-So-aBK"/>
+                <constraint firstItem="WjH-6q-7kH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="9nL-b0-9yb"/>
+                <constraint firstItem="WjH-6q-7kH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="TcL-qu-uFZ"/>
+                <constraint firstAttribute="bottom" secondItem="lCd-eo-OS0" secondAttribute="bottom" constant="-3" id="Txm-Bw-VVx"/>
+                <constraint firstItem="8Ag-Dw-4ot" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZjX-wd-htb"/>
+                <constraint firstAttribute="trailing" secondItem="8Ag-Dw-4ot" secondAttribute="trailing" id="bji-07-lWZ"/>
+                <constraint firstItem="lCd-eo-OS0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dks-2e-9L4"/>
+                <constraint firstAttribute="trailing" secondItem="lCd-eo-OS0" secondAttribute="trailing" id="e9L-Gi-P92"/>
+                <constraint firstAttribute="trailing" secondItem="WjH-6q-7kH" secondAttribute="trailing" constant="2" id="jfR-sl-PVp"/>
+                <constraint firstItem="lCd-eo-OS0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jnZ-wQ-Ytf"/>
+            </constraints>
+            <size key="customSize" width="178" height="192"/>
+            <connections>
+                <outlet property="address" destination="VRz-50-kNy" id="nes-kR-XyH"/>
+                <outlet property="bottomView" destination="8Ag-Dw-4ot" id="tqz-CD-eiD"/>
+                <outlet property="icoImageView" destination="WjH-6q-7kH" id="fbg-IY-2AO"/>
+                <outlet property="shopName" destination="HEd-5G-zMm" id="UJt-z0-uiA"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="121"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Bitmap" width="168" height="133"/>
+        <image name="bg_home_goods" width="171" height="190"/>
+        <image name="dingwei" width="16" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RefundsListHeadeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-0Z-goZ">
+                    <rect key="frame" x="16" y="6" width="30" height="34"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpX-5W-wJg">
+                    <rect key="frame" x="283" y="8" width="76" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="Jhl-QW-LWe"/>
+                        <constraint firstAttribute="height" constant="30" id="PDE-Y2-fxp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="联系卖家">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待商家查看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pro-Pk-Lme">
+                    <rect key="frame" x="16" y="8" width="76.5" height="18"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年08月17日13:55:02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-35-Nqc">
+                    <rect key="frame" x="16" y="24.5" width="131" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hgR-0Z-goZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3eE-qX-dbE"/>
+                <constraint firstItem="hgR-0Z-goZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="3oP-h2-iPZ"/>
+                <constraint firstAttribute="bottom" secondItem="KY2-35-Nqc" secondAttribute="bottom" constant="8" id="JvP-ab-9HZ"/>
+                <constraint firstItem="BpX-5W-wJg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N4q-pn-Cky"/>
+                <constraint firstItem="pro-Pk-Lme" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="WAQ-Yw-0aT"/>
+                <constraint firstItem="KY2-35-Nqc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XNV-99-OfV"/>
+                <constraint firstItem="pro-Pk-Lme" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ca5-UH-2RT"/>
+                <constraint firstAttribute="trailing" secondItem="BpX-5W-wJg" secondAttribute="trailing" constant="16" id="f8J-i8-gHy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contactTheSeller" destination="BpX-5W-wJg" id="MOn-5k-3kt"/>
+                <outlet property="nameLable" destination="pro-Pk-Lme" id="PuK-fg-yrs"/>
+                <outlet property="statusButton" destination="hgR-0Z-goZ" id="O3A-NI-y4a"/>
+                <outlet property="timer" destination="KY2-35-Nqc" id="wdH-gZ-ywG"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="-241"/>
+        </view>
+    </objects>
+</document>
